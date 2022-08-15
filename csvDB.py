@@ -7,9 +7,9 @@ import sqlite3 as sql
 # Autor: Taiel De Luca @ 2022
 
 #
-#   Como usar el script-> Se deberan ingrasar los csv en la carpeta dedidaca llamada csv luego ejecutar el script con python
-#   generara un archivo llamado database.db que tendra almacenadas las tablas con los valores en el csv, tambien se creara
-#   un archivo de log en el cual se podran ver informacion de la base de datos.
+#   Como usar el script-> Se deberan ingresar los csv en la carpeta dedicada llamada csv luego ejecutar el script con python
+#   generara un archivo llamado database.db que tendra almacenadas las tablas con los valores de los .csv, tambien se creara
+#   un archivo tipo log en el cual se podran ver informacion de las tablas creadas(tipos y nombres).
 #
 
 
