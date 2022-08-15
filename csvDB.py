@@ -6,6 +6,13 @@ import sqlite3 as sql
 
 # Autor: Taiel De Luca @ 2022
 
+#
+#   Como usar el script-> Se deberan ingrasar los csv en la carpeta dedidaca llamada csv luego ejecutar el script con python
+#   generara un archivo llamado database.db que tendra almacenadas las tablas con los valores en el csv, tambien se creara
+#   un archivo de log en el cual se podran ver informacion de la base de datos.
+#
+
+
 #Variables
 separadores = [',','|',';']
 prohibitedCaracters = [",",'"',"'",' ']
@@ -149,7 +156,7 @@ def CreateLog(columnas,columnasType):
     info = '----->INFORMACION DE LA BASE DE DATOS CREADA<-----\nLas Columnas creadas en la base de datos son las siguientes con los siguientes tipo de datos\n\n\n  Nombre ->  idDB   Tipo ->  AutoIncremental\n'
     for i in range(len(columnas)):
         info += f'  Nombre ->  {columnas[i]} Tipo ->  {columnasType[i]} \n'
-    file = open(f'.log.txt','w')
+    file = open(f'.log.txt','a+')
     file.write(info)
     file.close()
     return True
